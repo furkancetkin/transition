@@ -1,0 +1,95 @@
+
+body{
+    background-color: wheat;
+}
+
+h1{
+    height: 100px;
+    width: 550px;
+    padding-top: 40px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: darkcyan;
+    border: 3px solid black;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    /* transition-property: all;
+    transition-duration: .7s;
+    transition-timing-function: ease-in; */
+    transition: all 0.7s ease-in;
+}
+
+h1:hover{
+    background-color: moccasin;
+    border: 3px solid pink;
+    color: steelblue;
+    width: 750px;
+}
+
+.container{
+    width: 950px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.kutu{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    transition-property: all; /* border-radius, background-color; */ /* Geçiş özelliği */
+    transition-duration: 1s; /* Geçiş hızı */
+    transition-timing-function: ease; /* Geçiş hızı türü */
+    transition-delay: .5s; /* Geçiş gecikmesi */
+}
+
+.kutu:hover{
+    background-color: chocolate;
+    border-radius: 100px;
+}
+
+.kutu2{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease-in-out;
+}
+
+.kutu2:hover{
+    background-color: lightslategrey;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+img:hover{
+    border: 3px solid white;
+    transform: scale(2);
+    transition: all 0.8s ease;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    transition: .8s linear;
+}
+
+p:hover{
+    font-size: 35px;
+    color: red;
+    transform: translateX(200px);
+}
